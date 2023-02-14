@@ -21,6 +21,7 @@ const { frontmatter } = Astro.props;
       <div class="center-container">
       <div class="container">
          <h1 class="main-head">{frontmatter.mhead}</h1>
+         <p class="subtitle">{frontmatter.subtitle}</p>
 		   <slot />
       </div>
       </div>
@@ -85,5 +86,13 @@ const { frontmatter } = Astro.props;
       font-size: 3rem;
       margin: 0;
       margin-bottom: 1rem;
+      line-height: 3.5rem;
    }
+
+   .subtitle {
+      font-style: italic;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      margin-left: 1rem;
+   } 
 </style>
