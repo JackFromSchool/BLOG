@@ -1,0 +1,25 @@
+---
+const { src } = Astro.props
+---
+<div>
+<iframe width="560" height="315"
+src={src} title="YouTube video
+player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreen></iframe>
+</div>
+
+<style>
+   div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+   }
+
+   iframe {
+      width: 90%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+   }
+</style>
+
